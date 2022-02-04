@@ -1,6 +1,5 @@
 package com.example.cicero.repositories;
 
-
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
 
@@ -19,6 +18,8 @@ import com.example.cicero.entities.Empresa;
 import com.example.cicero.entities.Funcionario;
 import com.example.cicero.enums.PerfilEnum;
 import com.example.cicero.utils.PasswordUtils;
+
+
 
 @RunWith(SpringRunner.class)
 @SpringBootTest

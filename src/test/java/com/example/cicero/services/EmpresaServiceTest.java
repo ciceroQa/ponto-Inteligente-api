@@ -29,6 +29,7 @@ public class EmpresaServiceTest {
 
 	@Autowired
 	private EmpresaService empresaService;
+
 	private static final String CNPJ = "51463645000100";
 
 	@Before
@@ -40,12 +41,14 @@ public class EmpresaServiceTest {
 	@Test
 	public void testBuscarEmpresaPorCnpj() {
 		Optional<Empresa> empresa = this.empresaService.buscarPorCnpj(CNPJ);
+
 		assertTrue(empresa.isPresent());
 	}
 
 	@Test
 	public void testPersistirEmpresa() {
 		Empresa empresa = this.empresaService.persistir(new Empresa());
+
 		assertNotNull(empresa);
 	}
 

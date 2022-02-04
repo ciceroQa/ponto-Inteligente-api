@@ -15,6 +15,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 import com.example.cicero.entities.Empresa;
 
 
+
 @RunWith(SpringRunner.class)
 @SpringBootTest
 @ActiveProfiles("test")
@@ -46,4 +47,3 @@ public class EmpresaRepositoryTest {
 	}
 
 }
-
