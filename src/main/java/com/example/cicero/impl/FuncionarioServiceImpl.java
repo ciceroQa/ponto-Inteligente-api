@@ -25,13 +25,13 @@ public class FuncionarioServiceImpl implements FuncionarioService {
 	}
 
 	@Override
-	public Optional<Funcionario> buscarProCpf(String cpf) {
+	public Optional<Funcionario> buscarPorCpf(String cpf) {
 		log.info("Buscando funcionário pelo CPF {}", cpf);
 		return Optional.ofNullable(this.funcionarioRepository.findByCpf(cpf));
 	}
 
 	@Override
-	public Optional<Funcionario> buscarProEmail(String email) {
+	public Optional<Funcionario> buscarPorEmail(String email) {
 		log.info("Buscando funcionário pelo email {}", email);
 		return Optional.ofNullable(this.funcionarioRepository.findByEmail(email));
 	}
