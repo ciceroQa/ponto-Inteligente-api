@@ -76,6 +76,7 @@ public class FuncionarioDto {
         return qtdHorasAlmoco;
     }
 
+    
     public void setQtdHorasAlmoco(Optional<String> qtdHorasAlmoco){
         this.qtdHorasAlmoco=qtdHorasAlmoco;
     }
