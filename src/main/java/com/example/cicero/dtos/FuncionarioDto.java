@@ -1,7 +1,5 @@
 package com.example.cicero.dtos;
 
-import com.example.cicero.entities.Funcionario;
-import com.sun.xml.internal.ws.api.ha.StickyFeature;
 import org.hibernate.validator.constraints.Length;
 
 import javax.validation.constraints.Email;
@@ -23,8 +21,8 @@ public class FuncionarioDto {
         return id;
     }
 
-    public void setId(){
-        this.id=id;
+    public void setId(Long id){
+        this.id= this.id;
     }
 
     @NotEmpty(message = "Nome nao pode ser vazio.")
